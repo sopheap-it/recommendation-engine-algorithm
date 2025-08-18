@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-08-15T10:20:00.000Z" agent="5.0" etag="abc123" version="22.1.16" type="device">
+  <diagram name="Infrastructure Architecture" id="infrastructure-diagram">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="🚀 Cloud Infrastructure &amp; Deployment Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#1E40AF;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="800" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Internet Users -->
+        <mxCell id="users" value="🌍 Internet Users&lt;br&gt;(End Users)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1E40AF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- DNS -->
+        <mxCell id="dns" value="📡 DNS Server&lt;br&gt;(rea.sopheap.dev)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- AWS Cloud -->
+        <mxCell id="aws-cloud" value="☁️ AWS Cloud" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FF9900;strokeColor=#232F3E;fontSize=16;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="450" y="80" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Load Balancer -->
+        <mxCell id="lb" value="⚖️ Load Balancer&lt;br&gt;(Future Enhancement)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#3730A3;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="100" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- EC2 Instance -->
+        <mxCell id="ec2" value="🖥️ EC2 Instance&lt;br&gt;Ubuntu 24.04 LTS&lt;br&gt;t2.micro&lt;br&gt;IP: 18.136.209.47" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1FAE5;strokeColor=#065F46;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="220" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Nginx -->
+        <mxCell id="nginx" value="🌐 Nginx&lt;br&gt;Web Server&lt;br&gt;Port 80/443&lt;br&gt;Reverse Proxy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEE2E2;strokeColor=#DC2626;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="220" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Next.js App -->
+        <mxCell id="nextjs" value="⚡ Next.js 15&lt;br&gt;React Application&lt;br&gt;Port 3000&lt;br&gt;PM2 Managed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#3730A3;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="220" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Database (Future) -->
+        <mxCell id="db" value="🗄️ Database&lt;br&gt;(Future Enhancement)&lt;br&gt;PostgreSQL/MySQL&lt;br&gt;RDS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="220" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Security Group -->
+        <mxCell id="security" value="🛡️ Security Group&lt;br&gt;Ports: 22, 80, 443&lt;br&gt;Firewall Rules&lt;br&gt;VPC Configuration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEE2E2;strokeColor=#DC2626;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- SSL Certificate -->
+        <mxCell id="ssl" value="🔒 SSL Certificate&lt;br&gt;Let's Encrypt&lt;br&gt;Auto-renewal&lt;br&gt;HTTPS Security" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1FAE5;strokeColor=#065F46;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Monitoring -->
+        <mxCell id="monitoring" value="📊 Monitoring&lt;br&gt;(Future Enhancement)&lt;br&gt;Prometheus&lt;br&gt;Grafana" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- CI/CD Pipeline -->
+        <mxCell id="cicd" value="🔄 CI/CD Pipeline&lt;br&gt;(Future Enhancement)&lt;br&gt;GitHub Actions&lt;br&gt;Auto Deployment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#3730A3;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections -->
+        <!-- Users to DNS -->
+        <mxCell id="conn1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#1E40AF;" edge="1" parent="1" source="users" target="dns">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- DNS to AWS -->
+        <mxCell id="conn2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#D97706;" edge="1" parent="1" source="dns" target="aws-cloud">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Load Balancer to EC2 -->
+        <mxCell id="conn3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#3730A3;" edge="1" parent="1" source="lb" target="ec2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- EC2 to Nginx -->
+        <mxCell id="conn4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#065F46;" edge="1" parent="1" source="ec2" target="nginx">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Nginx to Next.js -->
+        <mxCell id="conn5" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#DC2626;" edge="1" parent="1" source="nginx" target="nextjs">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Next.js to Database -->
+        <mxCell id="conn6" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#3730A3;dashed=1;" edge="1" parent="1" source="nextjs" target="db">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Security Group to EC2 -->
+        <mxCell id="conn7" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#DC2626;" edge="1" parent="1" source="security" target="ec2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- SSL to Nginx -->
+        <mxCell id="conn8" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#065F46;" edge="1" parent="1" source="ssl" target="nginx">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Monitoring to EC2 -->
+        <mxCell id="conn9" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#D97706;dashed=1;" edge="1" parent="1" source="monitoring" target="ec2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- CI/CD to EC2 -->
+        <mxCell id="conn10" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#3730A3;dashed=1;" edge="1" parent="1" source="cicd" target="ec2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend" value="📋 Legend&lt;br&gt;✅ Current Implementation&lt;br&gt;🚀 Future Enhancement&lt;br&gt;🔗 Connection Types&lt;br&gt;🔄 Data Flow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F4F6;strokeColor=#6B7280;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="500" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Current Status -->
+        <mxCell id="status" value="🎯 Current Status&lt;br&gt;✅ Website Deployed&lt;br&gt;✅ Nginx Configured&lt;br&gt;✅ PM2 Running&lt;br&gt;✅ SSL Ready&lt;br&gt;⏳ DNS Propagating&lt;br&gt;🚀 Next: Monitoring &amp; CI/CD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1FAE5;strokeColor=#065F46;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="500" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Team Info -->
+        <mxCell id="team" value="👥 Project Team&lt;br&gt;👨‍💻 Sopheap Om (Lead)&lt;br&gt;👨‍💻 Pich Chimi&lt;br&gt;👨‍💻 Phea Phorn&lt;br&gt;👨‍💻 Ngan Kang&lt;br&gt;👨‍🏫 SIN BUNTHOEURN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#3730A3;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="500" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Next Steps -->
+        <mxCell id="next" value="🚀 Next Steps&lt;br&gt;1. Docker Containerization&lt;br&gt;2. CI/CD Pipeline&lt;br&gt;3. Database Integration&lt;br&gt;4. Monitoring Stack&lt;br&gt;5. Load Balancer&lt;br&gt;6. Auto-scaling" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="500" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
