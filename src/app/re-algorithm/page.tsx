@@ -570,7 +570,7 @@ export default function REAlgorithmPage() {
                     <li>User-count bonus of +0.05 per contributing neighbor (up to +0.20).</li>
                   </ul>
                   <div className="bg-gray-700 p-2 rounded text-yellow-400 font-mono text-xs mt-2 overflow-x-auto">
-                    confidence = clamp01( avgSim × (1 − penalty) + bonus )
+                    confidence = clamp01( avgSim x (1 - penalty) + bonus )
                   </div>
                 </div>
 

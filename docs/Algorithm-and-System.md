@@ -190,7 +190,7 @@ Responsibilities & interactions
   - Shows predicted rating, Confidence, quality metrics
   - Embeds `EnhancedAlgorithmViz`
 - `src/components/enhanced-algorithm-viz.tsx`:
-  - Similar User Discovery with per‑user “View Details” to expand Pearson math
+  - Find User Similar with per‑user “View Details” to expand Pearson math
   - Reflects config thresholds; caps top neighbors for readability
 
 Notes

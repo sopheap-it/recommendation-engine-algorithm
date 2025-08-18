@@ -98,11 +98,6 @@ export function MovieDetailModal({
             <div className="flex items-center space-x-4 text-sm">
               <span>{new Date(movie.releaseDate).getFullYear()}</span>
               <span>•</span>
-              <div className="flex items-center space-x-1">
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <span>{movie.voteAverage.toFixed(1)}</span>
-              </div>
-              <span>•</span>
               <span>{movie.genres.map(g => g.name).join(', ')}</span>
             </div>
           </div>
@@ -284,7 +279,7 @@ export function MovieDetailModal({
                     </div>
 
                     {/* Confidence Score */}
-                    <div className="mt-4 pt-4 border-t border-red-500/30">
+                    {/* <div className="mt-4 pt-4 border-t border-red-500/30">
                       <div className="flex items-center justify-between">
                         <span className="text-white/80">Confidence Score:</span>
                         <span className="text-white font-semibold">{ConfigHelpers.formatConfidence(confidenceScore)}</span>
@@ -302,7 +297,7 @@ export function MovieDetailModal({
                           <span>High</span>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Recommendation Quality Metrics */}

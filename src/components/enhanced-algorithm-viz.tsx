@@ -127,7 +127,7 @@ export function EnhancedAlgorithmViz({
     },
     {
       id: 2,
-      title: "Similar User Discovery",
+      title: "Find User Similarity",
       description: "Find users with similar taste preferences using Pearson correlation",
       icon: <Calculator className="h-6 w-6" />,
       content: (
